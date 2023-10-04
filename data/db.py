@@ -39,5 +39,3 @@ def create(info, start_params, live_params):
     )
     session.add(match)
     session.commit()
-
-create()
