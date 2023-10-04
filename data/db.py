@@ -2,6 +2,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
 from data.models import Base, Basket
+
+
 engine = create_engine('sqlite:///basket.db', echo=False)
 Base.metadata.create_all(engine)
 session = Session(engine)
